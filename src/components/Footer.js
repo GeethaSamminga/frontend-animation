@@ -60,7 +60,7 @@ const Footer = () => {
             Quick Links
           </Typography>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-            {["About", "Gallery", "Campaigns"].map((link, index) => (
+            {["About", "Portfolio", "Services"].map((link, index) => (
               <Link
                 key={index}
                 href={`/${link.toLowerCase().replace(" ", "-")}`}

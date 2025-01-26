@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
 import { motion } from "framer-motion";
-import Banner from "../images/jungle.webp";
+import Banner from "../images/jungle.webp"; // Consider using an appropriate animation-related banner
 
 const TermsAndConditions = () => {
   return (
@@ -31,7 +31,7 @@ const TermsAndConditions = () => {
             textShadow: "2px 2px 5px rgba(0,0,0,0.5)",
           }}
         >
-          GiveHope - Terms and Conditions
+          Terms and Conditions
         </Typography>
       </Box>
 
@@ -41,116 +41,123 @@ const TermsAndConditions = () => {
           Overview
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          At GiveHope, we are dedicated to fighting poverty and supporting those
-          in need. Through your generous contributions, we provide essential
-          resources such as food, shelter, education, and healthcare to those
-          who need it most. Your donations help bridge the gap between
-          vulnerability and a brighter future for individuals and communities in
-          need.
+          At 3D Animal Animations, we aim to bring the beauty and realism of
+          wildlife and mythical creatures to life through stunning 3D
+          animations. Our work incorporates cutting-edge technology, animation
+          techniques, and artistic vision to create lifelike, immersive
+          experiences that captivate audiences and educate them about the
+          natural world and imaginary creatures.
         </Typography>
       </Box>
 
-      {/* Why Donations Matter */}
+      {/* Why 3D Animations Matter */}
       <Box sx={{ mb: 6 }}>
         <Typography variant="h5" component="h2" gutterBottom>
-          Why Donations Matter
+          Why 3D Animations Matter
         </Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Typography variant="body1" color="textSecondary">
-              <strong>Fighting Hunger:</strong> Donations provide access to
-              essential food for families and individuals struggling with food
-              insecurity.
+              <strong>Bringing Wildlife to Life:</strong> Our 3D animations
+              provide a realistic portrayal of animals, helping people connect
+              with the beauty and fragility of nature in an engaging and
+              accessible way.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="body1" color="textSecondary">
-              <strong>Providing Shelter:</strong> We offer safe shelter for
-              those without a home, giving them a secure place to rebuild their
-              lives.
+              <strong>Exploring Mythical Creatures:</strong> With the help of
+              advanced 3D techniques, we bring to life creatures from fantasy
+              and mythology, offering a chance to experience worlds beyond our
+              imagination.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="body1" color="textSecondary">
-              <strong>Access to Education:</strong> Donations fund educational
-              programs for underprivileged children and adults, opening doors to
-              a brighter future.
+              <strong>Educational Impact:</strong> 3D animations are powerful
+              tools for educating audiences about wildlife conservation, animal
+              behavior, and the importance of biodiversity.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="body1" color="textSecondary">
-              <strong>Health and Well-being:</strong> Support medical treatments
-              and wellness programs that improve health outcomes in impoverished
-              communities.
+              <strong>Artistic Expression:</strong> We push the boundaries of
+              animation techniques to create awe-inspiring visuals that showcase
+              the endless possibilities of artistic expression in the world of
+              3D animation.
             </Typography>
           </Grid>
         </Grid>
       </Box>
 
-      {/* Impact of Donations */}
+      {/* Impact of 3D Animations */}
       <Box sx={{ mb: 6 }}>
         <Typography variant="h5" component="h2" gutterBottom>
-          The Impact of Your Contributions
+          The Impact of 3D Animal Animations
         </Typography>
         <ul style={{ marginTop: "16px", paddingLeft: "20px" }}>
           <li>
             <Typography variant="body1" color="textSecondary">
-              <strong>Emergency Relief:</strong> Providing immediate support to
-              families in crisis situations, such as during natural disasters or
-              financial hardship.
+              <strong>Raising Awareness:</strong> Our animations help raise
+              awareness about endangered species and the importance of
+              preserving wildlife.
             </Typography>
           </li>
           <li>
             <Typography variant="body1" color="textSecondary">
-              <strong>Food Distribution:</strong> Delivering nutritious food to
-              communities facing hunger and malnutrition.
+              <strong>Inspiring Creativity:</strong> Our animations encourage
+              budding animators and artists to explore the world of 3D animation
+              and nature in new, innovative ways.
             </Typography>
           </li>
           <li>
             <Typography variant="body1" color="textSecondary">
-              <strong>Job Training and Skill Development:</strong> Equipping
-              individuals with the tools they need to break the cycle of
-              poverty.
+              <strong>Contributing to Conservation:</strong> Through our
+              animations, we support conservation efforts by shedding light on
+              the challenges that animals face and the importance of protecting
+              their habitats.
             </Typography>
           </li>
           <li>
             <Typography variant="body1" color="textSecondary">
-              <strong>Health Services:</strong> Providing access to medical care
-              and wellness programs to improve overall health in underserved
-              communities.
+              <strong>Entertainment and Education:</strong> We aim to strike a
+              balance between entertainment and education, offering viewers the
+              chance to experience realistic animations while learning about
+              animal behavior.
             </Typography>
           </li>
         </ul>
       </Box>
 
-      {/* Goals Section */}
+      {/* Goals of 3D Animal Animations */}
       <Box sx={{ mb: 6 }}>
         <Typography variant="h5" component="h2" gutterBottom>
-          What We Aim to Achieve
+          Our Goals for 3D Animations
         </Typography>
         <ul style={{ paddingLeft: "20px" }}>
           <li>
             <Typography variant="body1" color="textSecondary">
-              Assist <strong>100,000 individuals annually</strong> through food,
-              shelter, and education programs.
+              Create <strong>realistic animal animations</strong> that showcase
+              the beauty of the natural world.
             </Typography>
           </li>
           <li>
             <Typography variant="body1" color="textSecondary">
-              Provide <strong>medical aid</strong> to those in need, especially
-              in remote or underserved areas.
+              Feature <strong>mythical and fantasy creatures</strong> to expand
+              the boundaries of imagination and storytelling.
             </Typography>
           </li>
           <li>
             <Typography variant="body1" color="textSecondary">
-              Launch <strong>economic empowerment programs</strong> to help
-              families become self-sufficient.
+              Educate viewers on the{" "}
+              <strong>importance of wildlife conservation</strong>
+              and the challenges that animals face in the modern world.
             </Typography>
           </li>
           <li>
             <Typography variant="body1" color="textSecondary">
-              Set up <strong>mobile support units</strong> to reach impoverished
-              areas and provide services directly where they're most needed.
+              Inspire the next generation of animators and artists to create
+              innovative, thought-provoking works in the field of 3D animation.
             </Typography>
           </li>
         </ul>
@@ -159,13 +166,14 @@ const TermsAndConditions = () => {
       {/* Call to Action */}
       <Box>
         <Typography variant="h5" component="h2" gutterBottom>
-          Be the Change - Give Hope
+          Become a Part of the Animation Revolution
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          Your donation can transform lives. Whether it's a financial
-          contribution, donating goods, or your time, together we can remove
-          poverty and create a future of hope and opportunity for those in need.
-          Join us in making a difference today.
+          By supporting 3D Animal Animations, you can help us continue to create
+          lifelike, awe-inspiring animations that educate, entertain, and raise
+          awareness about the natural world. Your involvement allows us to push
+          the boundaries of creativity and conservation. Join us in making the
+          world a better place for animals and people alike.
         </Typography>
       </Box>
     </Container>
