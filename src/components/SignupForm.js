@@ -225,7 +225,7 @@ const SignupForm = () => {
             margin="normal"
           />
           <TextField
-            label="Password"
+            label="Password(contain letter,specialCharacter)"
             name="password"
             value={formData.password}
             onChange={handleChange}

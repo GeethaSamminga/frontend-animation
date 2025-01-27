@@ -207,7 +207,7 @@ const NavMain = () => {
               <Box sx={{ marginLeft: 2 }}>
                 <Button
                   sx={{
-                    color: "black",
+                    color: "white",
                     backgroundColor: "#1E90FF", // Initial background color
                     fontWeight: "bold",
                     textTransform: "none",
