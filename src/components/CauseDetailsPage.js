@@ -182,8 +182,12 @@ const ServiceDetailsPage = () => {
               <Button
                 variant="contained"
                 color="primary"
-                sx={{ height: "40px", ml: 2 }}
-                onClick={handleRequestButtonClick} // Enforce login check before showing form
+                sx={{
+                  height: "40px",
+                  ml: 2,
+                  padding: "30px", // Adjust padding for mobile (xs) and larger screens (sm)
+                }}
+                onClick={handleRequestButtonClick}
               >
                 Request Custom Animation
               </Button>
@@ -215,9 +219,12 @@ const ServiceDetailsPage = () => {
           <Typography
             id="request-modal-title"
             variant="h6"
-            sx={{ fontWeight: "bold", mb: 3 }}
+            sx={{
+              fontWeight: "bold",
+              mb: 3,
+            }}
           >
-            Request Custom Animation
+            Custom Animation
           </Typography>
 
           <TextField
