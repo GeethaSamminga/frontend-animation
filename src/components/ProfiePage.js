@@ -25,6 +25,7 @@ const ProfilePage = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
+  const [formErrors, setFormErrors] = useState({ phoneNumber: "", email: "" });
   const navigate = useNavigate();
 
   // Fetch userId from localStorage
@@ -62,14 +63,40 @@ const ProfilePage = () => {
   // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setUserData({
       ...userData,
       [name]: value,
     });
+
+    // Validate on change
+    if (name === "phoneNumber") {
+      // Check if phone number has 10 digits
+      const phoneValid = /^\d{10}$/.test(value);
+      setFormErrors((prevErrors) => ({
+        ...prevErrors,
+        phoneNumber: phoneValid ? "" : "Phone number must be 10 digits.",
+      }));
+    }
+
+    if (name === "email") {
+      // Check if email contains @gmail.com
+      const emailValid = /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(value);
+      setFormErrors((prevErrors) => ({
+        ...prevErrors,
+        email: emailValid ? "" : "Email must be a valid Gmail address.",
+      }));
+    }
   };
 
   // Save changes
   const saveChanges = async () => {
+    // Check if there are any validation errors before saving
+    if (formErrors.phoneNumber || formErrors.email) {
+      toast.error("Please fix the errors before submitting.");
+      return;
+    }
+
     setLoading(true);
     try {
       await axios.put(updateUrl, userData, {
@@ -78,7 +105,7 @@ const ProfilePage = () => {
         },
       });
       setSuccessMessage("User details updated successfully!");
-      toast.success(successMessage);
+      toast.success("User details updated successfully!");
     } catch (err) {
       setError("Failed to update user details.");
       toast.error(error);
@@ -192,6 +219,8 @@ const ProfilePage = () => {
                     value={userData.phoneNumber}
                     onChange={handleChange}
                     sx={{ boxShadow: 2 }}
+                    error={!!formErrors.phoneNumber}
+                    helperText={formErrors.phoneNumber}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -204,6 +233,8 @@ const ProfilePage = () => {
                     value={userData.email}
                     onChange={handleChange}
                     sx={{ boxShadow: 2 }}
+                    error={!!formErrors.email}
+                    helperText={formErrors.email}
                   />
                 </Grid>
               </Grid>
@@ -217,7 +248,9 @@ const ProfilePage = () => {
                     "&:hover": { backgroundColor: "#3CB8FF" },
                   }}
                   onClick={saveChanges}
-                  disabled={loading}
+                  disabled={
+                    loading || formErrors.phoneNumber || formErrors.email
+                  }
                 >
                   {loading ? "Saving..." : "Save Changes"}
                 </Button>

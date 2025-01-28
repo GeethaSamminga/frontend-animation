@@ -94,21 +94,23 @@ const JagoHero = () => {
         <Typography
           variant="body1"
           sx={{
-            fontSize: { xs: "0.875rem", sm: "1.25rem" },
+            fontSize: { xs: "0.875rem", sm: "1.5rem" },
             color: "#444",
             marginBottom: 3,
-            textAlign: "justify",
+            lineHeight: 1.6, // Adjust line height for better readability
           }}
         >
           Our 3D animation services include lifelike animal animations designed
-          for educational platforms, games, and entertainment. Example
-          animations include:
+          for educational platforms, games, and entertainment.
+          <br />
+          Example animations include:
           <Box
             component="ul"
             sx={{
-              paddingLeft: "1.5rem", // Indent list items for alignment
-              // margin: 0, // Remove margin for consistent spacing
-              fontSize: { xs: "0.875rem", sm: "1.25rem" }, // Match font size with text
+              paddingLeft: { xs: "1.25rem", sm: "1.5rem" }, // Adjust for better alignment
+              fontSize: { xs: "0.875rem", sm: "1.25rem" },
+              listStyleType: "disc", // Ensures list items are displayed as bullet points
+              marginTop: 1, // Adds space between the paragraph and the list
             }}
           >
             <li>Majestic lion roaming through the savannah</li>

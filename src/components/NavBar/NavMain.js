@@ -35,6 +35,8 @@ import {
 } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import HealthLogo from "../../health.png";
 
 const NavMain = () => {
@@ -80,6 +82,7 @@ const NavMain = () => {
       localStorage.removeItem("userId");
       setUser(null);
       navigate("/");
+      toast.success("Successfully logged out!");
     } catch (error) {
       console.error("Error logging out:", error);
     }
@@ -89,20 +92,14 @@ const NavMain = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleDonateClick = () => {
-    if (user) {
-      navigate("/donate");
-    } else {
-      setLoginModalOpen(true);
-    }
-  };
-
   const handleCloseLoginModal = () => {
     setLoginModalOpen(false);
   };
 
   return (
     <>
+      <ToastContainer />
+
       <AppBar position="sticky" sx={{ backgroundColor: "black" }}>
         <Toolbar
           sx={{

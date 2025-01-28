@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography, Link } from "@mui/material";
 import { motion } from "framer-motion";
-import { Facebook, Twitter, Instagram, LinkedIn } from "@mui/icons-material";
-
+import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+import XIcon from "@mui/icons-material/X";
 const Footer = () => {
   return (
     <Box
@@ -123,7 +123,7 @@ const Footer = () => {
             {[
               { icon: LinkedIn, link: "https://www.linkedin.com" },
               { icon: Facebook, link: "https://www.facebook.com" },
-              { icon: Twitter, link: "https://www.twitter.com" },
+              { icon: XIcon, link: "https://www.twitter.com" },
               { icon: Instagram, link: "https://www.instagram.com" },
             ].map(({ icon: Icon, link }, index) => (
               <Link
@@ -146,7 +146,7 @@ const Footer = () => {
       {/* Social Media & Copyright */}
       <Box sx={{ textAlign: "center" }}>
         <Typography variant="body2">
-          © 2024 BeastlyVisions. All rights reserved.
+          © 2025 BeastlyVisions. All rights reserved.
         </Typography>
       </Box>
     </Box>
