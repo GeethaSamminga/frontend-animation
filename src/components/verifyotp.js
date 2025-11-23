@@ -20,7 +20,7 @@ const VerifyOtp = () => {
 
     try {
       const response = await axios.post(
-        "https://animation-backend.vercel.app/api/users/verify-otp",
+        "http://localhost:5000/api/users/verify-otp",
         formData
       );
 

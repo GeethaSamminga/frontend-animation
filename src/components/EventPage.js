@@ -11,7 +11,7 @@ const EventsPage = () => {
 
   useEffect(() => {
     axios
-      .get("https://animation-backend.vercel.app/api/events/")
+      .get("http://localhost:5000/api/events/")
       .then((response) => {
         setEvents(response.data.data);
         setLoading(false);

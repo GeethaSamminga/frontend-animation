@@ -36,8 +36,8 @@ const ProfilePage = () => {
   }
 
   // Example API endpoints (replace :id with userId dynamically)
-  const apiUrl = `https://animation-backend.vercel.app/api/users/${userId}`;
-  const updateUrl = `https://animation-backend.vercel.app/api/users/${userId}`;
+  const apiUrl = `http://localhost:5000/api/users/${userId}`;
+  const updateUrl = `http://localhost:5000/api/users/${userId}`;
 
   // Fetch user data on component mount
   useEffect(() => {

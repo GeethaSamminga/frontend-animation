@@ -39,7 +39,7 @@ const ContactPage = () => {
 
     try {
       const res = await axios.post(
-        "https://animation-backend.vercel.app/api/contact",
+        "http://localhost:5000/api/contact",
         formData
       );
       toast.success("Message sent successfully!", {

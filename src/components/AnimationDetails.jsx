@@ -6,22 +6,22 @@ import Banner from "../images/jungle.webp";
 import { motion } from "framer-motion";
 
 const AnimationDetailPage = () => {
-  const { id } = useParams(); // Get the animation ID from the URL
+  const { id } = useParams(); 
   const [animation, setAnimation] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  // Fetch animation details based on ID
+ 
   useEffect(() => {
     const fetchAnimationDetails = async () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `https://animation-backend.vercel.app/api/animations/${id}`
+          `http://localhost:5000/api/animations/${id}`
         );
-        setAnimation(response.data); // Set animation details
-        setLoading(false); // Set loading to false after data is fetched
+        setAnimation(response.data); 
+        setLoading(false); 
       } catch (err) {
         setError("Failed to fetch animation details.");
         setLoading(false);

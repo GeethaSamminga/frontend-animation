@@ -10,7 +10,7 @@ const NewsDetailsPage = () => {
 
   // Fetch the detailed news data by id
   useEffect(() => {
-    fetch(`https://animation-backend.vercel.app/api/news/${id}`)
+    fetch(`http://localhost:5000/api/news/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setNewsDetails(data);

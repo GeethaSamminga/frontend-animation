@@ -19,7 +19,7 @@ const FAQ = () => {
     const fetchFaqs = async () => {
       try {
         const response = await fetch(
-          "https://animation-backend.vercel.app/api/faqs"
+          "http://localhost:5000/api/faqs"
         );
         const data = await response.json();
         console.log(data);

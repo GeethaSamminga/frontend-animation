@@ -31,7 +31,7 @@ const ServiceDetailsPage = () => {
   useEffect(() => {
     // Fetch service details on mount
     axios
-      .get(`https://animation-backend.vercel.app/api/services/${id}`)
+      .get(`http://localhost:5000/api/services/${id}`)
       .then((response) => {
         setService(response.data);
         setLoading(false);
@@ -54,7 +54,7 @@ const ServiceDetailsPage = () => {
     const token = localStorage.getItem("authToken");
     try {
       const response = await axios.post(
-        "https://animation-backend.vercel.app/api/request/submit-request",
+        "http://localhost:5000/api/request/submit-request",
         {
           ...formData,
           serviceId: id, // Pass the current service ID

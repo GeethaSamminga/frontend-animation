@@ -32,7 +32,7 @@ const PreFooter = () => {
     try {
       // Make the POST request to the backend API
       const response = await axios.post(
-        "https://animation-backend.vercel.app/api/subscribe/",
+        "http://localhost:5000/api/subscribe/",
         { email }
       );
 

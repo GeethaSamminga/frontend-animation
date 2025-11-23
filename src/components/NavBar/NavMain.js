@@ -57,7 +57,7 @@ const NavMain = () => {
   const fetchUser = async (userId, token) => {
     try {
       const { data } = await axios.get(
-        `https://animation-backend.vercel.app/api/users/${userId}`,
+        `http://localhost:5000/api/users/${userId}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setUser(data);
@@ -72,7 +72,7 @@ const NavMain = () => {
       const token = localStorage.getItem("authToken");
       if (token) {
         await axios.get(
-          "https://animation-backend.vercel.app/api/users/logout",
+          "http://localhost:5000/api/users/logout",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

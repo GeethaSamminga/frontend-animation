@@ -27,7 +27,7 @@ const News = () => {
   // Fetch data from API
   useEffect(() => {
     axios
-      .get("https://animation-backend.vercel.app/api/news/")
+      .get("http://localhost:5000/api/news/")
       .then((response) => {
         setNewsData(response.data);
         setFilteredNews(response.data); // Set initial filtered news data

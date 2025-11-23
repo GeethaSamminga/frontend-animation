@@ -30,8 +30,8 @@ const AnimalAnimationSection = () => {
           variant="h6"
           paragraph
           sx={{
-            fontSize: { xs: "1rem", sm: "1.25rem" }, // Decrease font size on mobile
-            display: { xs: "none", sm: "block" }, // Hide on mobile and show on larger screens
+            fontSize: { xs: "1rem", sm: "1.25rem" }, 
+            display: { xs: "none", sm: "block" }, 
           }}
         >
           Experience the beauty of nature like never before! Our 3D animal
@@ -41,7 +41,7 @@ const AnimalAnimationSection = () => {
         <Typography
           variant="body1"
           color="text.secondary"
-          sx={{ fontSize: { xs: "0.75rem", sm: "1rem" } }} // Decrease font size on mobile
+          sx={{ fontSize: { xs: "0.75rem", sm: "1rem" } }} 
         >
           Immerse yourself in the world of 3D animations, where every detail
           tells a unique story of the animal kingdom.
@@ -50,12 +50,12 @@ const AnimalAnimationSection = () => {
           variant="contained"
           sx={{
             mt: 2,
-            backgroundColor: "#1E90FF", // You can change this color to match the palette you prefer
+            backgroundColor: "#1E90FF", 
             color: "#fff",
             "&:hover": {
-              backgroundColor: "#3CB8FF", // Darker shade on hover
+              backgroundColor: "#3CB8FF", 
             },
-            fontSize: { xs: "0.75rem", sm: "1rem" }, // Button font size adjusts on smaller screens
+            fontSize: { xs: "0.75rem", sm: "1rem" }, 
           }}
           onClick={handleGalleryRedirect}
         >
@@ -66,20 +66,20 @@ const AnimalAnimationSection = () => {
         sx={{
           flex: 1,
           textAlign: "center",
-          mt: { xs: 2, sm: 0 }, // Add margin-top on mobile to separate image from text
+          mt: { xs: 2, sm: 0 }, 
         }}
       >
         <img
           src={jungle}
           alt="3D Animal Animation"
           style={{
-            width: "100%", // Ensures the image takes full width of its container
+            width: "100%",
             height: "auto",
           }}
           sx={{
-            maxWidth: { xs: "200px", sm: "300px", md: "400px" }, // Set different maxWidth values for mobile, tablet, and desktop
+            maxWidth: { xs: "200px", sm: "300px", md: "400px" },
             borderRadius: "8px",
-            objectFit: "cover", // Ensures the image fits nicely
+            objectFit: "cover", 
           }}
         />
       </Box>
