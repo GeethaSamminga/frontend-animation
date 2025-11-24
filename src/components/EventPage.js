@@ -11,7 +11,7 @@ const EventsPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/events/")
+      .get("https://backend-animation.onrender.com/api/events/")
       .then((response) => {
         setEvents(response.data.data);
         setLoading(false);

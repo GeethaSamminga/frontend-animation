@@ -54,7 +54,7 @@ const ResetPassword = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/users/reset-password/${resetToken}`,
+        `https://backend-animation.onrender.com/api/users/reset-password/${resetToken}`,
         { password, confirmpassword }
       );
       toast.success(response.data.message);

@@ -17,7 +17,7 @@ const EventDetailsPage = () => {
   useEffect(() => {
     // Fetch event data based on the ID
     axios
-      .get(`http://localhost:5000/api/events/${id}`)
+      .get(`https://backend-animation.onrender.com/api/events/${id}`)
       .then((response) => {
         console.log(response);
         setEvent(response.data.data);

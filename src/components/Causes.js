@@ -27,7 +27,7 @@ const Causes = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/services/") // API call to fetch services
+      .get("https://backend-animation.onrender.com/api/services/") // API call to fetch services
       .then((response) => {
         const servicesData = response.data; // Response from services endpoint
         console.log("API Response:", servicesData);

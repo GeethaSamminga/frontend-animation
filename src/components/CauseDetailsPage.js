@@ -31,7 +31,7 @@ const ServiceDetailsPage = () => {
   useEffect(() => {
     // Fetch service details on mount
     axios
-      .get(`http://localhost:5000/api/services/${id}`)
+      .get(`https://backend-animation.onrender.com/api/services/${id}`)
       .then((response) => {
         setService(response.data);
         setLoading(false);
@@ -54,7 +54,7 @@ const ServiceDetailsPage = () => {
     const token = localStorage.getItem("authToken");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/request/submit-request",
+        "https://backend-animation.onrender.com/api/request/submit-request",
         {
           ...formData,
           serviceId: id, // Pass the current service ID

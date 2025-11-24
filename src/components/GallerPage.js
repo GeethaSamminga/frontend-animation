@@ -31,7 +31,7 @@ const GalleryPage = () => {
       setLoading(true); // Set loading to true before fetching data
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/animations/"
+          "https://backend-animation.onrender.com/api/animations/"
         );
         console.log(response);
         setAnimations(response.data);

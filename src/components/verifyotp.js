@@ -20,7 +20,7 @@ const VerifyOtp = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/verify-otp",
+        "https://backend-animation.onrender.com/api/users/verify-otp",
         formData
       );
 

@@ -27,7 +27,7 @@ const News = () => {
   // Fetch data from API
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/news/")
+      .get("https://backend-animation.onrender.com/api/news/")
       .then((response) => {
         setNewsData(response.data);
         setFilteredNews(response.data); // Set initial filtered news data

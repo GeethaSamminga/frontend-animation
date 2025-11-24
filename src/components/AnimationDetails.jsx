@@ -18,7 +18,7 @@ const AnimationDetailPage = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/animations/${id}`
+          `https://backend-animation.onrender.com/api/animations/${id}`
         );
         setAnimation(response.data); 
         setLoading(false); 

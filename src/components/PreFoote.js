@@ -32,7 +32,7 @@ const PreFooter = () => {
     try {
       // Make the POST request to the backend API
       const response = await axios.post(
-        "http://localhost:5000/api/subscribe/",
+        "https://backend-animation.onrender.com/api/subscribe/",
         { email }
       );
 

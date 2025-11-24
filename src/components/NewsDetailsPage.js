@@ -10,7 +10,7 @@ const NewsDetailsPage = () => {
 
   // Fetch the detailed news data by id
   useEffect(() => {
-    fetch(`http://localhost:5000/api/news/${id}`)
+    fetch(`https://backend-animation.onrender.com/api/news/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setNewsDetails(data);

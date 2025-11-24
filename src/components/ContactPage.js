@@ -39,7 +39,7 @@ const ContactPage = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/contact",
+        "https://backend-animation.onrender.com/api/contact",
         formData
       );
       toast.success("Message sent successfully!", {

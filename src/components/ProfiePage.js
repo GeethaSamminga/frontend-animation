@@ -36,8 +36,8 @@ const ProfilePage = () => {
   }
 
   // Example API endpoints (replace :id with userId dynamically)
-  const apiUrl = `http://localhost:5000/api/users/${userId}`;
-  const updateUrl = `http://localhost:5000/api/users/${userId}`;
+  const apiUrl = `https://backend-animation.onrender.com/api/users/${userId}`;
+  const updateUrl = `https://backend-animation.onrender.com/api/users/${userId}`;
 
   // Fetch user data on component mount
   useEffect(() => {

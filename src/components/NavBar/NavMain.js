@@ -57,7 +57,7 @@ const NavMain = () => {
   const fetchUser = async (userId, token) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/users/${userId}`,
+        `https://backend-animation.onrender.com/api/users/${userId}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setUser(data);
@@ -72,7 +72,7 @@ const NavMain = () => {
       const token = localStorage.getItem("authToken");
       if (token) {
         await axios.get(
-          "http://localhost:5000/api/users/logout",
+          "https://backend-animation.onrender.com/api/users/logout",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

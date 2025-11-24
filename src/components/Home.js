@@ -28,7 +28,7 @@ const Home = () => {
     const fetchCampaigns = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/services/"
+          "https://backend-animation.onrender.com/api/services/"
         );
         console.log(response);
         setCardData(response.data.slice(0, 3));
@@ -43,7 +43,7 @@ const Home = () => {
     const fetchGallery = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/animations/"
+          "https://backend-animation.onrender.com/api/animations/"
         );
         setGalleryImages(response.data.slice(0, 3)); // Only take the first 3
       } catch (error) {
